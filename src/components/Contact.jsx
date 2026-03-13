@@ -153,12 +153,10 @@ Have a project in mind? Let's build something amazing together.
 <div className="info-icon">📧</div>
 <div>
 <h4>Email</h4>
-<a href="mailto:arshiasheikh303@gmail.com" className="info-link">
-arshiasheikh303@gmail.com
+<a href="mailto:sheikharshia73@gmail.com" className="info-link">
+sheikharshia73.com
 </a>
-  <a href="mailto:sheikharshia73@gmail.com" className="info-link">
-sheikharshia73@gmail.com
-</a>
+
 </div>
 </div>
 
