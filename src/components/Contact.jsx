@@ -156,6 +156,9 @@ Have a project in mind? Let's build something amazing together.
 <a href="mailto:arshiasheikh303@gmail.com" className="info-link">
 arshiasheikh303@gmail.com
 </a>
+  <a href="mailto:sheikharshia73@gmail.com" className="info-link">
+sheikharshia73@gmail.com
+</a>
 </div>
 </div>
 
