@@ -1,0 +1,132 @@
+/* Section Container */
+.skills-section {
+  position: relative;
+  padding: 100px 50px;
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, #0a0a0a, #111, #1e1e3f);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  overflow: hidden;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #00ffff, #ffd500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #aaa;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Skill Category */
+.skill-category {
+  flex: 1;
+  min-width: 250px;
+}
+
+.category-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00ffff;
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Skill Card */
+.skill-card {
+  background: linear-gradient(135deg, #111133, #0f0f0f);
+  border: 1px solid #00ffff;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out, box-shadow 0.3s;
+}
+
+.skill-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-card.hovered {
+  box-shadow: 0 0 15px #00ffff, 0 0 30px #ffd500;
+  transform: translateY(-5px);
+}
+
+/* Skill Icon */
+.skill-icon {
+  font-size: 30px;
+}
+
+/* Skill Name */
+.skill-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  flex: 1;
+}
+
+/* Skill Progress Bar */
+.skill-progress {
+  flex: 1;
+  height: 8px;
+  background: #222244;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffff, #ffd500);
+  border-radius: 10px;
+  width: 0%;
+  transition: width 1s ease;
+}
+
+/* Animate fill on visible */
+.skill-card.visible .progress-fill {
+  width: 90%;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .skill-category {
+    width: 100%;
+  }
+}
